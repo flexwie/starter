@@ -12,5 +12,6 @@ mkShell {
     nodejs
     nodePackages.typescript-language-server
     protobuf
+    go-task
   ];
 }

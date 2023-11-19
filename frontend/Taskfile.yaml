@@ -1,0 +1,12 @@
+version: 3
+
+tasks:
+  proto:
+    cmds:
+      # TODO: change
+      - buf generate https://github.com/flexwie/starter.git#subdir=proto --path blog/v1
+    generates:
+      - apis/**/*.js
+      - apis/**/*.d.ts
+    sources:
+      - ../proto/**/*.proto
